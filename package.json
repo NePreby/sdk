@@ -1,0 +1,112 @@
+{
+  "name": "@hanzo/sdk",
+  "version": "2.0.0",
+  "description": "Unified Hanzo TypeScript SDK — IAM, KMS, Commerce, Billing, MPC, PaaS, Team. One install, every service.",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./iam": {
+      "types": "./dist/iam/index.d.ts",
+      "import": "./dist/iam/index.mjs",
+      "require": "./dist/iam/index.js"
+    },
+    "./kms": {
+      "types": "./dist/kms/index.d.ts",
+      "import": "./dist/kms/index.mjs",
+      "require": "./dist/kms/index.js"
+    },
+    "./commerce": {
+      "types": "./dist/commerce/index.d.ts",
+      "import": "./dist/commerce/index.mjs",
+      "require": "./dist/commerce/index.js"
+    },
+    "./commerce/admin": {
+      "types": "./dist/commerce/admin/index.d.ts",
+      "import": "./dist/commerce/admin/index.mjs",
+      "require": "./dist/commerce/admin/index.js"
+    },
+    "./commerce/store": {
+      "types": "./dist/commerce/store/index.d.ts",
+      "import": "./dist/commerce/store/index.mjs",
+      "require": "./dist/commerce/store/index.js"
+    },
+    "./commerce/types": {
+      "types": "./dist/commerce/types.d.ts",
+      "import": "./dist/commerce/types.mjs",
+      "require": "./dist/commerce/types.js"
+    },
+    "./billing": {
+      "types": "./dist/billing/index.d.ts",
+      "import": "./dist/billing/index.mjs",
+      "require": "./dist/billing/index.js"
+    },
+    "./mpc": {
+      "types": "./dist/mpc/index.d.ts",
+      "import": "./dist/mpc/index.mjs",
+      "require": "./dist/mpc/index.js"
+    },
+    "./paas": {
+      "types": "./dist/paas/index.d.ts",
+      "import": "./dist/paas/index.mjs",
+      "require": "./dist/paas/index.js"
+    },
+    "./team": {
+      "types": "./dist/team/index.d.ts",
+      "import": "./dist/team/index.mjs",
+      "require": "./dist/team/index.js"
+    },
+    "./api": {
+      "types": "./dist/api/index.d.ts",
+      "import": "./dist/api/index.mjs",
+      "require": "./dist/api/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "hanzo",
+    "sdk",
+    "iam",
+    "kms",
+    "commerce",
+    "billing",
+    "mpc",
+    "paas",
+    "team",
+    "oidc",
+    "oauth2",
+    "typescript"
+  ],
+  "homepage": "https://github.com/hanzo-js/sdk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanzo-js/sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hanzo-js/sdk/issues"
+  },
+  "author": "Hanzo AI, Inc. <hi@hanzo.ai>",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  }
+}
