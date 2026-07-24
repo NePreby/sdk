@@ -29,7 +29,7 @@ DRY: implement once here; discovery repos link out, never duplicate.
 - Paths are `/v1/…` only — never an `/api/` prefix.
 - Zen models are our own family — never name upstream models.
 - Voice: "Hanzo — the Open AI Cloud." Modern, crisp, developer-first.
-- Never reference any white-label tenant here.
+- Never reference any white-label tenant or upstream fork here.
 
 ## Source of truth
 Architecture + placement rules: `~/work/hanzo/SDK-ARCHITECTURE.md`.
